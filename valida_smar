@@ -1,0 +1,37 @@
+
+## Conteúdo do Repositório
+
+- **data/**: Contém arquivos CSV e outros formatos de dados usados como entrada para o algoritmo de validação e análise de dados.
+  
+- **notebooks/**: Inclui notebooks Jupyter utilizados para explorar dados, validar hipóteses, e documentar o processo de análise.
+
+- **scripts/**: Contém scripts Python, incluindo o **ValidaSMAR**, que automatizam a validação e análise de dados.
+
+- **reports/**: Diretório para armazenar relatórios gerados após a execução dos scripts de análise, incluindo resumos das validações e insights obtidos.
+
+- **tests/**: Inclui scripts de teste que validam a funcionalidade dos códigos e garantem que o processo de validação de dados esteja funcionando corretamente.
+
+- **.github/workflows/**: Contém arquivos de configuração para GitHub Actions, automatizando o processo de Continuous Integration/Continuous Deployment (CI/CD).
+
+## Algoritmo ValidaSMAR
+
+O **ValidaSMAR** é o principal algoritmo utilizado neste projeto para garantir a qualidade dos dados coletados pelo programa Jovem de Futuro no estado do Piauí. Ele é responsável por:
+
+- **Coleta de Dados**: Importa dados de fontes como S3 e CSV para DataFrames do pandas.
+  
+- **Pré-Processamento**: Realiza a limpeza inicial dos dados, incluindo a remoção de espaços em branco, conversão de tipos e tratamento de valores ausentes.
+
+- **Validação de Dados**: Verifica a completude, consistência, acurácia e unicidade dos dados.
+
+- **Relatório de Validação**: Gera um relatório detalhado com os resultados das verificações, destacando problemas encontrados e sugerindo correções.
+
+- **Correção de Dados**: Aplica correções automáticas aos dados e marca registros que precisam de revisão manual.
+
+- **Armazenamento de Dados**: Salva os dados corrigidos e validados, exportando-os para armazenamento seguro.
+
+## Instalação
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/InstitutoUnibanco/JF4_GIPE_PI.git
+   cd JF4_GIPE_PI
